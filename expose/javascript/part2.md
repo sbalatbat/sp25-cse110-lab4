@@ -34,3 +34,13 @@
     - E. `true == 2 = false` The boolean `true` is converted to `1` by numeric conversion, which is not equal to `2`, resolving this to `false`.
     - `true === Boolean(2) = true` Following boolean conversion, `2` is "nonempty" so it converts to true. Under strict comparison, the boolean `true` is equal to the now converted boolean `true` so this resolves to `true`.
 15. The `==` operator compares values, even ones of different types, while taking type conversion into consideration. If two values of different types are being compared, the values are converted into numbers then compared according to number rules. Meanwhile, the `===` is a strict equality operator that compares values without type conversion. If the two values being compared are different types, it immediately returns false without attempting any conversion. This also applies to the keywords `null` and `undefined`, which are interpreted to be different types under strict equality comparison although they equal one another under non-strict comparison check.
+16. `/part2-question16.js`
+17. The returned result is a list consisting of each number in the `array` parameter being doubled. For this specific function call `modifyArray([1,2,3], doSomething)`, the returned list is `[ 2, 4, 6 ]`. The list `[1,2,3]` is passed into `modifyArray` along with the function `doSomething`. Inside of `modifyArray`, `doSomething` is called on each element of the list, and the returned result is added into `newArr` which is returned at the end of `modifyArray`. `doSomething` doubles each number passed into it and returns that result.
+18. `/part2-question18.js`
+19. `printNums`
+    ```
+    1
+    4
+    3
+    2
+    ```
